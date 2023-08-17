@@ -1,0 +1,440 @@
+2023-08-16 20:20:14.516  INFO 35407 --- [restartedMain] c.jrp.pma.ProjectManagementApplication   : Starting ProjectManagementApplication using Java 17.0.3 on Ronaks-MacBook-Air.local with PID 35407 (/Users/ronak/Documents/workspace-spring-tool-suite-4-4.15.2.RELEASE/Project-Management/target/classes started by ronak in /Users/ronak/Documents/workspace-spring-tool-suite-4-4.15.2.RELEASE/Project-Management)
+2023-08-16 20:20:14.538 DEBUG 35407 --- [restartedMain] c.jrp.pma.ProjectManagementApplication   : Running with Spring Boot v2.7.2, Spring v5.3.22
+2023-08-16 20:20:14.539  INFO 35407 --- [restartedMain] c.jrp.pma.ProjectManagementApplication   : The following 1 profile is active: "dev"
+2023-08-16 20:20:14.663  INFO 35407 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-16 20:20:14.663  INFO 35407 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-16 20:20:16.384  INFO 35407 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-16 20:20:16.514  INFO 35407 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105 ms. Found 3 JPA repository interfaces.
+2023-08-16 20:20:18.515  INFO 35407 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-08-16 20:20:18.724  INFO 35407 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4058 ms
+2023-08-16 20:20:19.828  INFO 35407 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2023-08-16 20:20:23.554  INFO 35407 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16 20:20:24.739  WARN 35407 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-16 20:20:25.566  INFO 35407 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3ef54b2d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@720e9618, org.springframework.security.web.context.SecurityContextPersistenceFilter@2342bd37, org.springframework.security.web.header.HeaderWriterFilter@487bfd65, org.springframework.security.web.csrf.CsrfFilter@916ea39, org.springframework.security.web.authentication.logout.LogoutFilter@336a0f21, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@51f6f12c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6228d744, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@33323cb2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@880805e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@19466fb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1224fd64, org.springframework.security.web.session.SessionManagementFilter@151bf4a5, org.springframework.security.web.access.ExceptionTranslationFilter@59d40d06, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@28642e11]
+2023-08-16 20:20:27.370  INFO 35407 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-16 20:20:27.441  INFO 35407 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-16 20:20:27.484  INFO 35407 --- [restartedMain] c.jrp.pma.ProjectManagementApplication   : Started ProjectManagementApplication in 13.843 seconds (JVM running for 16.257)
+2023-08-16 20:20:41.093  INFO 35407 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-16 20:20:41.096  INFO 35407 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-08-16 20:20:41.248 DEBUG 35407 --- [http-nio-8080-exec-1] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:20:41.255 DEBUG 35407 --- [http-nio-8080-exec-1] c.j.pma.Logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.jrp.pma.Controllers.HomeController.displayHome () with argument(s) = [{}]
+2023-08-16 20:20:41.261 DEBUG 35407 --- [http-nio-8080-exec-1] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:20:42.029 DEBUG 35407 --- [http-nio-8080-exec-1] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:20:42.031 DEBUG 35407 --- [http-nio-8080-exec-1] c.j.pma.Logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.jrp.pma.Controllers.HomeController.displayHome () with argument(s) = [{VersionNumber=dev, projectsList=[com.jrp.pma.entities.Project@5814080c, com.jrp.pma.entities.Project@4e578a52, com.jrp.pma.entities.Project@7b006ca7, com.jrp.pma.entities.Project@3eb59069, com.jrp.pma.entities.Project@7e4ad871, com.jrp.pma.entities.Project@c3dc8f0], projectStatusCnt=[{"stageCount":2,"label":"INPROGRESS"},{"stageCount":2,"label":"COMPLETED"},{"stageCount":2,"label":"NOTSTARTED"}], employeeProjectList=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@551e3244, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@3bd50550, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@89565e3, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@6a037500, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@4eabe616, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@5d479516, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@7ede5920, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@f04888e, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@1e8e442e, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@7f008dcc, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@739bcc55, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@58f06a50, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@3433ea54, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@4f267ff3]}]
+2023-08-16 20:20:42.032 DEBUG 35407 --- [http-nio-8080-exec-1] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:20:42.919 DEBUG 35407 --- [http-nio-8080-exec-2] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:20:42.920 DEBUG 35407 --- [http-nio-8080-exec-2] c.j.pma.Logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.jrp.pma.Controllers.AppErrorController.handleError () with argument(s) = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@2da18814]]
+2023-08-16 20:20:42.921 DEBUG 35407 --- [http-nio-8080-exec-2] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:20:42.949 DEBUG 35407 --- [http-nio-8080-exec-2] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:20:42.950 DEBUG 35407 --- [http-nio-8080-exec-2] c.j.pma.Logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.jrp.pma.Controllers.AppErrorController.handleError () with argument(s) = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@2da18814]]
+2023-08-16 20:20:42.954 DEBUG 35407 --- [http-nio-8080-exec-2] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:20:43.067 DEBUG 35407 --- [http-nio-8080-exec-1] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:20:43.068 DEBUG 35407 --- [http-nio-8080-exec-1] c.j.pma.Logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.jrp.pma.Controllers.AppErrorController.handleError () with argument(s) = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@51decab0]]
+2023-08-16 20:20:43.069 DEBUG 35407 --- [http-nio-8080-exec-1] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:20:43.069 DEBUG 35407 --- [http-nio-8080-exec-1] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:20:43.069 DEBUG 35407 --- [http-nio-8080-exec-1] c.j.pma.Logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.jrp.pma.Controllers.AppErrorController.handleError () with argument(s) = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@51decab0]]
+2023-08-16 20:20:43.069 DEBUG 35407 --- [http-nio-8080-exec-1] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:20:43.544 DEBUG 35407 --- [http-nio-8080-exec-4] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:20:43.544 DEBUG 35407 --- [http-nio-8080-exec-4] c.j.pma.Logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.jrp.pma.Controllers.AppErrorController.handleError () with argument(s) = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@47f38a6d]]
+2023-08-16 20:20:43.544 DEBUG 35407 --- [http-nio-8080-exec-4] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:20:43.544 DEBUG 35407 --- [http-nio-8080-exec-4] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:20:43.545 DEBUG 35407 --- [http-nio-8080-exec-4] c.j.pma.Logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.jrp.pma.Controllers.AppErrorController.handleError () with argument(s) = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@47f38a6d]]
+2023-08-16 20:20:43.545 DEBUG 35407 --- [http-nio-8080-exec-4] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:20:49.132 DEBUG 35407 --- [http-nio-8080-exec-6] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:20:49.132 DEBUG 35407 --- [http-nio-8080-exec-6] c.j.pma.Logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.jrp.pma.Controllers.AppErrorController.handleError () with argument(s) = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@61c58b04]]
+2023-08-16 20:20:49.133 DEBUG 35407 --- [http-nio-8080-exec-6] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:20:49.133 DEBUG 35407 --- [http-nio-8080-exec-6] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:20:49.133 DEBUG 35407 --- [http-nio-8080-exec-6] c.j.pma.Logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.jrp.pma.Controllers.AppErrorController.handleError () with argument(s) = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@61c58b04]]
+2023-08-16 20:20:49.133 DEBUG 35407 --- [http-nio-8080-exec-6] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:21:28.881 DEBUG 35407 --- [http-nio-8080-exec-7] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:21:28.883 DEBUG 35407 --- [http-nio-8080-exec-7] c.j.pma.Logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.jrp.pma.Controllers.EmployeeController.displayEmployees () with argument(s) = [{}]
+2023-08-16 20:21:28.884 DEBUG 35407 --- [http-nio-8080-exec-7] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:21:28.906 DEBUG 35407 --- [http-nio-8080-exec-7] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:21:28.907 DEBUG 35407 --- [http-nio-8080-exec-7] c.j.pma.Logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.jrp.pma.Controllers.EmployeeController.displayEmployees () with argument(s) = [{employees=[com.jrp.pma.entities.Employee@1d917a76, com.jrp.pma.entities.Employee@8b3ef62, com.jrp.pma.entities.Employee@728b062, com.jrp.pma.entities.Employee@138efba, com.jrp.pma.entities.Employee@17ec6721, com.jrp.pma.entities.Employee@b34241, com.jrp.pma.entities.Employee@425a4995, com.jrp.pma.entities.Employee@4d93b5b, com.jrp.pma.entities.Employee@70f8918e, com.jrp.pma.entities.Employee@6ac3749a, com.jrp.pma.entities.Employee@7a459eb6, com.jrp.pma.entities.Employee@370b7146, com.jrp.pma.entities.Employee@3cbe2c8, com.jrp.pma.entities.Employee@725d318f]}]
+2023-08-16 20:21:28.908 DEBUG 35407 --- [http-nio-8080-exec-7] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:21:29.094 DEBUG 35407 --- [http-nio-8080-exec-9] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:21:29.095 DEBUG 35407 --- [http-nio-8080-exec-9] c.j.pma.Logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.jrp.pma.Controllers.AppErrorController.handleError () with argument(s) = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@53eb2eea]]
+2023-08-16 20:21:29.095 DEBUG 35407 --- [http-nio-8080-exec-9] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:21:29.095 DEBUG 35407 --- [http-nio-8080-exec-9] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:21:29.095 DEBUG 35407 --- [http-nio-8080-exec-9] c.j.pma.Logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.jrp.pma.Controllers.AppErrorController.handleError () with argument(s) = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@53eb2eea]]
+2023-08-16 20:21:29.095 DEBUG 35407 --- [http-nio-8080-exec-9] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:21:29.117 DEBUG 35407 --- [http-nio-8080-exec-9] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:21:29.117 DEBUG 35407 --- [http-nio-8080-exec-9] c.j.pma.Logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.jrp.pma.Controllers.AppErrorController.handleError () with argument(s) = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@5913459a]]
+2023-08-16 20:21:29.117 DEBUG 35407 --- [http-nio-8080-exec-9] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:21:29.118 DEBUG 35407 --- [http-nio-8080-exec-9] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:21:29.118 DEBUG 35407 --- [http-nio-8080-exec-9] c.j.pma.Logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.jrp.pma.Controllers.AppErrorController.handleError () with argument(s) = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@5913459a]]
+2023-08-16 20:21:29.118 DEBUG 35407 --- [http-nio-8080-exec-9] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:21:30.629 DEBUG 35407 --- [http-nio-8080-exec-10] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:21:30.630 DEBUG 35407 --- [http-nio-8080-exec-10] c.j.pma.Logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.jrp.pma.Controllers.ProjectController.displayEmployees () with argument(s) = [{}]
+2023-08-16 20:21:30.630 DEBUG 35407 --- [http-nio-8080-exec-10] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:21:30.653 DEBUG 35407 --- [http-nio-8080-exec-10] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:21:30.653 DEBUG 35407 --- [http-nio-8080-exec-10] c.j.pma.Logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.jrp.pma.Controllers.ProjectController.displayEmployees () with argument(s) = [{projects=[com.jrp.pma.entities.Project@7877784d, com.jrp.pma.entities.Project@30ceb2c, com.jrp.pma.entities.Project@2792184d, com.jrp.pma.entities.Project@2085e70d, com.jrp.pma.entities.Project@63735640, com.jrp.pma.entities.Project@7429489]}]
+2023-08-16 20:21:30.653 DEBUG 35407 --- [http-nio-8080-exec-10] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:21:30.760 DEBUG 35407 --- [http-nio-8080-exec-3] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:21:30.761 DEBUG 35407 --- [http-nio-8080-exec-3] c.j.pma.Logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.jrp.pma.Controllers.AppErrorController.handleError () with argument(s) = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@5a8c95e9]]
+2023-08-16 20:21:30.761 DEBUG 35407 --- [http-nio-8080-exec-3] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:21:30.761 DEBUG 35407 --- [http-nio-8080-exec-3] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:21:30.761 DEBUG 35407 --- [http-nio-8080-exec-3] c.j.pma.Logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.jrp.pma.Controllers.AppErrorController.handleError () with argument(s) = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@5a8c95e9]]
+2023-08-16 20:21:30.762 DEBUG 35407 --- [http-nio-8080-exec-3] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:21:30.784 DEBUG 35407 --- [http-nio-8080-exec-1] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:21:30.784 DEBUG 35407 --- [http-nio-8080-exec-1] c.j.pma.Logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.jrp.pma.Controllers.AppErrorController.handleError () with argument(s) = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@3059e511]]
+2023-08-16 20:21:30.785 DEBUG 35407 --- [http-nio-8080-exec-1] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:21:30.785 DEBUG 35407 --- [http-nio-8080-exec-1] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:21:30.785 DEBUG 35407 --- [http-nio-8080-exec-1] c.j.pma.Logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.jrp.pma.Controllers.AppErrorController.handleError () with argument(s) = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@3059e511]]
+2023-08-16 20:21:30.786 DEBUG 35407 --- [http-nio-8080-exec-1] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:21:32.312 DEBUG 35407 --- [http-nio-8080-exec-4] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:21:32.312 DEBUG 35407 --- [http-nio-8080-exec-4] c.j.pma.Logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.jrp.pma.Controllers.HomeController.displayHome () with argument(s) = [{}]
+2023-08-16 20:21:32.313 DEBUG 35407 --- [http-nio-8080-exec-4] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:21:32.337 DEBUG 35407 --- [http-nio-8080-exec-4] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:21:32.339 DEBUG 35407 --- [http-nio-8080-exec-4] c.j.pma.Logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.jrp.pma.Controllers.HomeController.displayHome () with argument(s) = [{VersionNumber=dev, projectsList=[com.jrp.pma.entities.Project@394b08bf, com.jrp.pma.entities.Project@2b5a1582, com.jrp.pma.entities.Project@4bd33258, com.jrp.pma.entities.Project@305ed8a5, com.jrp.pma.entities.Project@6c680518, com.jrp.pma.entities.Project@20d2378c], projectStatusCnt=[{"stageCount":2,"label":"INPROGRESS"},{"stageCount":2,"label":"COMPLETED"},{"stageCount":2,"label":"NOTSTARTED"}], employeeProjectList=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@5a2d4373, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@7ab016a5, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@3a13b806, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@5f2f0969, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@6fa9ff24, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@1556c94a, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@32a2806e, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@1561b312, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@35113e45, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@162ebd34, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@3029ee6f, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@28c8225b, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@1497c211, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@77331aaa]}]
+2023-08-16 20:21:32.339 DEBUG 35407 --- [http-nio-8080-exec-4] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:21:32.449 DEBUG 35407 --- [http-nio-8080-exec-7] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:21:32.450 DEBUG 35407 --- [http-nio-8080-exec-7] c.j.pma.Logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.jrp.pma.Controllers.AppErrorController.handleError () with argument(s) = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@3eccd6c]]
+2023-08-16 20:21:32.450 DEBUG 35407 --- [http-nio-8080-exec-7] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:21:32.450 DEBUG 35407 --- [http-nio-8080-exec-7] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:21:32.450 DEBUG 35407 --- [http-nio-8080-exec-7] c.j.pma.Logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.jrp.pma.Controllers.AppErrorController.handleError () with argument(s) = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@3eccd6c]]
+2023-08-16 20:21:32.450 DEBUG 35407 --- [http-nio-8080-exec-7] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:21:33.045 DEBUG 35407 --- [http-nio-8080-exec-8] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:21:33.045 DEBUG 35407 --- [http-nio-8080-exec-8] c.j.pma.Logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.jrp.pma.Controllers.ProjectController.displayProjectTimelines () with argument(s) = [{}]
+2023-08-16 20:21:33.045 DEBUG 35407 --- [http-nio-8080-exec-8] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:21:33.062 DEBUG 35407 --- [http-nio-8080-exec-8] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:21:33.063 DEBUG 35407 --- [http-nio-8080-exec-8] c.j.pma.Logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.jrp.pma.Controllers.ProjectController.displayProjectTimelines () with argument(s) = [{projectTimeList=[{"projectName":null,"projectStartDate":null,"projectEndDate":null}]}]
+2023-08-16 20:21:33.063 DEBUG 35407 --- [http-nio-8080-exec-8] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:21:33.152 DEBUG 35407 --- [http-nio-8080-exec-10] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:21:33.153 DEBUG 35407 --- [http-nio-8080-exec-10] c.j.pma.Logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.jrp.pma.Controllers.AppErrorController.handleError () with argument(s) = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@60ce605f]]
+2023-08-16 20:21:33.153 DEBUG 35407 --- [http-nio-8080-exec-10] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:21:33.153 DEBUG 35407 --- [http-nio-8080-exec-10] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:21:33.153 DEBUG 35407 --- [http-nio-8080-exec-10] c.j.pma.Logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.jrp.pma.Controllers.AppErrorController.handleError () with argument(s) = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@60ce605f]]
+2023-08-16 20:21:33.153 DEBUG 35407 --- [http-nio-8080-exec-10] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:21:33.176 DEBUG 35407 --- [http-nio-8080-exec-2] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:21:33.177 DEBUG 35407 --- [http-nio-8080-exec-2] c.j.pma.Logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.jrp.pma.Controllers.AppErrorController.handleError () with argument(s) = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@7a59b734]]
+2023-08-16 20:21:33.177 DEBUG 35407 --- [http-nio-8080-exec-2] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:21:33.177 DEBUG 35407 --- [http-nio-8080-exec-2] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:21:33.178 DEBUG 35407 --- [http-nio-8080-exec-2] c.j.pma.Logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.jrp.pma.Controllers.AppErrorController.handleError () with argument(s) = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@7a59b734]]
+2023-08-16 20:21:33.178 DEBUG 35407 --- [http-nio-8080-exec-2] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:21:34.717 DEBUG 35407 --- [http-nio-8080-exec-3] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:21:34.717 DEBUG 35407 --- [http-nio-8080-exec-3] c.j.pma.Logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.jrp.pma.Controllers.ProjectController.displayEmployees () with argument(s) = [{}]
+2023-08-16 20:21:34.718 DEBUG 35407 --- [http-nio-8080-exec-3] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:21:34.731 DEBUG 35407 --- [http-nio-8080-exec-3] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:21:34.731 DEBUG 35407 --- [http-nio-8080-exec-3] c.j.pma.Logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.jrp.pma.Controllers.ProjectController.displayEmployees () with argument(s) = [{projects=[com.jrp.pma.entities.Project@356db3b, com.jrp.pma.entities.Project@26097f38, com.jrp.pma.entities.Project@7338e1a1, com.jrp.pma.entities.Project@774b3799, com.jrp.pma.entities.Project@42f1a548, com.jrp.pma.entities.Project@2f6cf291]}]
+2023-08-16 20:21:34.731 DEBUG 35407 --- [http-nio-8080-exec-3] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:21:34.821 DEBUG 35407 --- [http-nio-8080-exec-1] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:21:34.822 DEBUG 35407 --- [http-nio-8080-exec-1] c.j.pma.Logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.jrp.pma.Controllers.AppErrorController.handleError () with argument(s) = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@67682f65]]
+2023-08-16 20:21:34.822 DEBUG 35407 --- [http-nio-8080-exec-1] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:21:34.822 DEBUG 35407 --- [http-nio-8080-exec-1] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:21:34.822 DEBUG 35407 --- [http-nio-8080-exec-1] c.j.pma.Logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.jrp.pma.Controllers.AppErrorController.handleError () with argument(s) = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@67682f65]]
+2023-08-16 20:21:34.822 DEBUG 35407 --- [http-nio-8080-exec-1] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:21:35.863 DEBUG 35407 --- [http-nio-8080-exec-6] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:21:35.864 DEBUG 35407 --- [http-nio-8080-exec-6] c.j.pma.Logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.jrp.pma.Controllers.HomeController.displayHome () with argument(s) = [{}]
+2023-08-16 20:21:35.867 DEBUG 35407 --- [http-nio-8080-exec-6] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:21:35.887 DEBUG 35407 --- [http-nio-8080-exec-6] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:21:35.888 DEBUG 35407 --- [http-nio-8080-exec-6] c.j.pma.Logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.jrp.pma.Controllers.HomeController.displayHome () with argument(s) = [{VersionNumber=dev, projectsList=[com.jrp.pma.entities.Project@530f41f4, com.jrp.pma.entities.Project@3318e027, com.jrp.pma.entities.Project@5090b9d3, com.jrp.pma.entities.Project@add3ff0, com.jrp.pma.entities.Project@23f4dfbe, com.jrp.pma.entities.Project@57991a3f], projectStatusCnt=[{"stageCount":2,"label":"INPROGRESS"},{"stageCount":2,"label":"COMPLETED"},{"stageCount":2,"label":"NOTSTARTED"}], employeeProjectList=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@5ab6b556, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@26432f81, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@1842a1b, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@1aaf6402, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@755c7e04, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@4adc7809, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@6aa857bb, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@b46b198, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@1dfc52aa, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@34496d2c, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@1cf4f191, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@228059e6, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@5d96361e, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@22c9108d]}]
+2023-08-16 20:21:35.888 DEBUG 35407 --- [http-nio-8080-exec-6] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:21:35.972 DEBUG 35407 --- [http-nio-8080-exec-5] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:21:35.972 DEBUG 35407 --- [http-nio-8080-exec-5] c.j.pma.Logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.jrp.pma.Controllers.AppErrorController.handleError () with argument(s) = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@270acfc3]]
+2023-08-16 20:21:35.972 DEBUG 35407 --- [http-nio-8080-exec-5] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:21:35.972 DEBUG 35407 --- [http-nio-8080-exec-5] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:21:35.973 DEBUG 35407 --- [http-nio-8080-exec-5] c.j.pma.Logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.jrp.pma.Controllers.AppErrorController.handleError () with argument(s) = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@270acfc3]]
+2023-08-16 20:21:35.973 DEBUG 35407 --- [http-nio-8080-exec-5] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:21:40.499 DEBUG 35407 --- [http-nio-8080-exec-10] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:21:40.499 DEBUG 35407 --- [http-nio-8080-exec-10] c.j.pma.Logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.jrp.pma.Controllers.AppErrorController.handleError () with argument(s) = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@38470e78]]
+2023-08-16 20:21:40.499 DEBUG 35407 --- [http-nio-8080-exec-10] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:21:40.499 DEBUG 35407 --- [http-nio-8080-exec-10] c.j.pma.Logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2023-08-16 20:21:40.500 DEBUG 35407 --- [http-nio-8080-exec-10] c.j.pma.Logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.jrp.pma.Controllers.AppErrorController.handleError () with argument(s) = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@38470e78]]
+2023-08-16 20:21:40.500 DEBUG 35407 --- [http-nio-8080-exec-10] c.j.pma.Logging.ApplicationLoggerAspect  : ------------------------------------------- 
+ 
+ 
+
+2023-08-16 20:23:09.975  INFO 35407 --- [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-08-16 20:23:10.012  INFO 35407 --- [RMI TCP Connection(12)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'

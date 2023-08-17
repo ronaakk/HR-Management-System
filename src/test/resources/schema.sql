@@ -1,0 +1,29 @@
+CREATE SEQUENCE IF NOT EXISTS employee_seq;
+
+CREATE TABLE IF NOT EXISTS employee (
+
+employeeid BIGINT NOT NULL DEFAULT NEXTVAL('employee_seq') PRIMARY KEY,
+email VARCHAR(100) NOT NULL,
+first_name VARCHAR(100) NOT NULL,
+last_name VARCHAR(100) NOT NULL
+
+);
+
+CREATE SEQUENCE IF NOT EXISTS project_seq;
+
+CREATE TABLE IF NOT EXISTS project (
+
+projectid BIGINT NOT NULL DEFAULT NEXTVAL('project_seq') PRIMARY KEY,
+name VARCHAR(100) NOT NULL,
+stage VARCHAR(100) NOT NULL,
+description VARCHAR(500) NOT NULL
+
+);
+
+
+CREATE TABLE IF NOT EXISTS project_employee (
+
+projectid BIGINT REFERENCES project, 
+employeeid BIGINT REFERENCES employee
+
+);

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace = "Layouts :: header">
+
+
+<body>
+
+<nav th:replace = "Layouts :: navbar"></nav>
+
+
+		<div class="container">
+			<form th:action="@{/projects/save}" th:object = "${aProject}" method="POST">
+			
+			<div class = "form-group">
+			<!--Material textarea-->
+				<div class="md-form">
+					<label for="project-name">Project Name</label>
+	  				<textarea th:field = "${aProject.name}" id="project-name" class="md-textarea form-control" 
+	  					      placeholder = "Enter Project Name..." rows="1"></textarea>		
+				</div>
+				<p style = "color: red" th:if = "${#fields.hasErrors('name')}" th:errorclass = "error" th:errors = "*{name}" />
+			</div>
+			
+			
+			<div class = "form-group">
+				<!-- This will be used to bind to the employee that was clicked on (USED FOR UPDATES) and save into database -->
+				<input type="hidden" th:field = "${aProject.projectID}" />
+				<label for="project-stage">Project Stage</label>
+				<select th:field = "${aProject.stage}">
+					<option th:value="NOTSTARTED"> Not Started</option>
+					<option th:value="INPROGRESS"> In Progress</option>
+					<option th:value="COMPLETED"> Completed</option>
+				</select>
+				
+			</div>
+			
+			<div class = "form-group">
+				
+				<div class="form-group shadow-textarea">
+	  				<label for="exampleFormControlTextarea6">Project Description</label>
+	  				<textarea th:field = "${aProject.description}" class="form-control z-depth-1" 
+	  						  id="exampleFormControlTextarea6" rows="3" placeholder="Enter Project Description...">
+	  				</textarea>
+	  				<p style = "color: red" th:if = "${#fields.hasErrors('description')}" th:errorclass = "error" th:errors = "*{description}" />
+				</div>
+						
+			</div>
+			
+			<div class = "form-group">
+				<label for="employees">Select Employee(s) to Assign</label>
+				<select class="form-control selectpicker" th:field = "*{employees}" id="employees" multiple>
+					<!-- Displays the employees from the repository with their first names -->
+					<option th:each = "employee : ${allEmployees}"
+						th:value = "${employee.employeeID}"
+						th:text = "${employee.firstName}">
+					</option>
+				</select>
+			</div>
+			
+			
+			<div class = "form-group">
+				<label for = "start">Expected Start Date:</label>
+				<input id = "start" type = "date" class = "mb-4 col-2 col-xs-4" placeholder = "MM/DD/YYYY" th:field = "${aProject.startDate}"> 
+			<!-- 	<p style = "color: red" th:if = "${#fields.hasErrors('startDate')}" th:errorclass = "error" th:errors = "*{startDate}" /> -->
+			</div>
+			
+			<div class = "form-group">
+				<label for = "end">Expected End Date:</label>
+				<input id = "end" type = "date" class = "mb-4 col-2 col-xs-4" placeholder = "MM/DD/YYYY" th:field = "${aProject.endDate}">
+		<!-- 		<p style = "color: red" th:if = "${#fields.hasErrors('endDate')}" th:errorclass = "error" th:errors = "*{endDate}" />  -->
+			</div>
+			
+			<!-- <script type = "text/javascript">
+				$('#start').datepicker();
+				$('#end').datepicker();
+			</script>
+			 -->
+			<div style = "display: flex; align-items: center; justify-content: center">
+				<button class = "btn btn-info" type="submit">Insert Project</button>
+			</div>
+	
+			
+			</form>
+		</div>
+	
+</body>
+
+</html>

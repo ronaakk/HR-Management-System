@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace = "Layouts :: header">
+
+<body>
+
+<nav th:replace = "Layouts :: navbar"></nav>
+
+	<div class = "container">
+		<h3> Project Directory </h3>
+		
+		<!-- Adding a new Project button -->
+		<a th:href = "@{/projects/new}"
+			class = "btn btn-primary btn-sm mb-3">
+			New Project
+		</a> 
+		
+		<!-- Making the table with the projects -->
+		<table class = "table table-bordered table-striped">
+			<thead class = "thead-dark">
+				<tr>
+					<th> Project Name </th>
+					<th> Stage </th>
+					<th> Action </th>
+					
+				</tr>
+			</thead>
+			<tbody>
+			<!-- Assigning the table with the project values -->
+				<tr th:each = "aProject : ${projects}">
+					<td th:text = "${aProject.name}"/>
+					<td th:text = "${aProject.stage}"/>
+					<td>
+					
+						<a th:href = "@{/projects/update(id = ${aProject.projectID})}"
+						   class = "btn btn-info btn-sm"> 
+						   Update
+						</a>
+						
+						<a th:href = "@{/projects/delete(id = ${aProject.projectID})}"
+						   class = "btn btn-danger btn-sm"
+						   th:onclick = "if (!(confirm('Are you sure you want to delete this project?'))) { 
+										return false; 
+									}"> 
+						   Delete
+						</a>	
+			
+					</td>
+				</tr>
+			</tbody>
+		
+		</table>
+	</div>
