@@ -6,11 +6,12 @@
 
 The HR Management System is a web application that allows users to efficiently manage potential employees, project deadlines, tasks, and team compositions. The project primarily explores the implementation of many-to-many relationships in a user-friendly interface.
 
-## Stack
+## Technology Used
 
-- Spring Boot
-- JavaScript
-- PostgreSQL
+- Spring Boot: Backend framework for Java.
+- JavaScript: Used for interactivity and visual elements.
+- PostgreSQL: Database management system for data storage.
+- Bootstrap: CSS framework for responsive user interfaces.
 
 ## Specifications
 
@@ -19,13 +20,6 @@ The HR Management System is a web application that allows users to efficiently m
 - Remove projects and employees from the database.
 - View project timelines to track project progress.
 - Get an overview of all projects, employees, and timelines on the home page.
-
-## Technology Used
-
-- Spring Boot: Backend framework for building robust and scalable APIs.
-- JavaScript: Used for interactivity and visual elements.
-- PostgreSQL: Database management system for data storage.
-- Bootstrap: CSS framework for responsive and stylish user interfaces.
 
 ## What I Learned
 
